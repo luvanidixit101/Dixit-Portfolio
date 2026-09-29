@@ -1,56 +1,38 @@
 # Dixit Luvani — Portfolio
 
-A responsive, static portfolio for internship applications. It uses HTML, CSS, and a small JavaScript file. No packages, API keys, or build step are needed.
+A responsive, static portfolio for internship applications. Built with HTML, CSS, and a small JavaScript file. There are no packages, API keys, or build steps.
 
-## Preview on your computer
+## Projects featured
 
-In a terminal opened inside this folder:
+- [ToolShare](https://github.com/luvanidixit101/toolshare-microservices) — React and Spring Boot tool sharing platform.
+- [FleetFlow](https://github.com/luvanidixit101/odoo-fleetflow) — Django fleet operations team project.
+- [Smart Attendance Tracker](https://github.com/luvanidixit101/GVP_AI_Hackathon_2026) — Django student attendance and marks project.
+- [Jungle Book](https://github.com/luvanidixit101/junglebook_PHP) — PHP and MySQL environmental NGO website.
+
+Each project card links directly to its GitHub repository. Descriptions reflect the public repositories; the attendance project does not claim to use a trained AI model.
+
+## Preview locally
+
+Extract the ZIP. In a terminal opened inside the extracted `dixit-portfolio` folder, run:
 
 ```powershell
 py -m http.server 5500
 ```
 
-Open `http://localhost:5500`. Press `Ctrl+C` to stop the preview.
+Open `http://localhost:5500`. Press `Ctrl+C` to stop the server. You can also open `index.html` directly from the extracted folder. Keep `styles.css`, `script.js`, `favicon.svg`, and the résumé PDF beside it. If the page looks unstyled, check that `index.html` and `styles.css` are in the same folder.
 
-You can also open `index.html` directly from the extracted folder. Keep `styles.css`, `script.js`, `favicon.svg`, and the résumé PDF beside it. If the page appears as plain black text on a white background, those files are missing or the HTML was moved to a different folder.
+## Update the existing GitHub and Vercel site
 
-## Deploy with Vercel
+The portfolio repository is [luvanidixit101/Dixit-Portfolio](https://github.com/luvanidixit101/Dixit-Portfolio). On GitHub, open the repository and choose **Add file → Upload files**. Upload the *contents* of the extracted folder to the repository root, replacing matching files, and commit the changes. In particular, `index.html` and `styles.css` must be together at the root.
 
-### 1. Create the GitHub repository
+If the Vercel project is connected to this GitHub repository, pushing to its production branch will trigger a new deployment. After it finishes, open [the current portfolio](https://dixit-portfolio-pi.vercel.app/) and check all four project links, the navigation, and the résumé download.
 
-Extract the ZIP. On GitHub, create a new, empty repository named `dixit-portfolio` under `luvanidixit101`. Do not select **Add a README file**, because this project already includes one.
+For a new Vercel import, choose **Add New → Project**, import `luvanidixit101/Dixit-Portfolio`, set **Root Directory** to `./` and **Framework Preset** to `Other`, and leave **Build Command** empty. Keep the default output directory for the project root, or enter `.` if an explicit path is required.
 
-Open PowerShell **inside the extracted `dixit-portfolio` folder**, where `index.html` is visible, and run:
+## Make it yours
 
-```powershell
-git init
-git branch -M main
-git add .
-git commit -m "Add internship portfolio"
-git remote add origin https://github.com/luvanidixit101/dixit-portfolio.git
-git push -u origin main
-```
-
-GitHub may ask you to sign in during the push. After it succeeds, confirm that `index.html` and `Dixit_Luvani_Resume.pdf` appear at the **repository root**. If you prefer the GitHub website, use **Add file → Upload files** and upload the *contents* of the extracted folder.
-
-### 2. Import it into Vercel
-
-1. In the Vercel dashboard, choose **Add New → Project** and import `luvanidixit101/dixit-portfolio`.
-2. Use **Root Directory** `./` and **Framework Preset** `Other`.
-3. Leave **Build Command** empty. Keep the default **Output Directory** for the project root, or enter `.` if asked for an explicit path. Select **Deploy**.
-4. Open the resulting URL. Check the home page, the **Projects** and **Contact** links, and the résumé download.
-
-If the deployed page appears unstyled, confirm `index.html` and `styles.css` are in the same deployed folder. The HTML uses relative asset paths so it also works when opened directly from the extracted folder.
-
-When you edit the portfolio later, commit and push the changes to `main`; Vercel will deploy the updated commit from the connected repository.
-
-Alternatively, from the project folder, after signing in to the Vercel CLI, run `vercel` and follow its prompts.
-
-## Editing your details
-
-- Change profile text, project descriptions, email, and GitHub links in `index.html`.
+- Edit your introduction, About section, project descriptions, email, and links in `index.html`.
 - Replace `Dixit_Luvani_Resume.pdf` with an updated PDF of the same filename.
 - Change colors and layout in `styles.css`.
-- Project buttons currently lead to the confirmed GitHub profile. If you want them to open each project directly, replace those two URLs with your public repository URLs.
 
-The site uses a Google Fonts stylesheet when available and system fonts as a fallback. The entire site remains readable without that external font request.
+The site uses Google Fonts when available and system fonts as a fallback.
