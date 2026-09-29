@@ -1,6 +1,6 @@
 # Dixit Luvani — Portfolio
 
-A responsive, static portfolio for internship applications. Built with HTML, CSS, and a small JavaScript file. There are no packages, API keys, or build steps.
+A responsive, static portfolio for internship applications. Built with HTML, CSS, and a small JavaScript file. The dark navy and purple design takes its one-page hero, animated role text, and timeline direction from the [portfolio tutorial](https://www.youtube.com/watch?v=oFnIe-RpkE4), then adapts the content for Dixit's projects and experience. The page adds gentle entrance and scroll animations, hover movement on projects and skills, and a reading progress line. Reduced-motion preferences are respected. There are no packages, API keys, or build steps. Project previews use CSS; the hero illustration is a local SVG.
 
 ## Projects featured
 
@@ -19,7 +19,7 @@ Extract the ZIP. In a terminal opened inside the extracted `dixit-portfolio` fol
 py -m http.server 5500
 ```
 
-Open `http://localhost:5500`. Press `Ctrl+C` to stop the server. You can also open `index.html` directly from the extracted folder. Keep `styles.css`, `script.js`, `favicon.svg`, and the résumé PDF beside it. If the page looks unstyled, check that `index.html` and `styles.css` are in the same folder.
+Open `http://localhost:5500`. Press `Ctrl+C` to stop the server. You can also open `index.html` directly from the extracted folder. Keep `styles.css`, `animations.css`, `script.js`, `developer.svg`, `favicon.svg`, and the résumé PDF beside it. If the page looks unstyled, check that `index.html` and both CSS files are in the same folder.
 
 ## Update the existing GitHub and Vercel site
 
@@ -33,6 +33,6 @@ For a new Vercel import, choose **Add New → Project**, import `luvanidixit101/
 
 - Edit your introduction, About section, project descriptions, email, and links in `index.html`.
 - Replace `Dixit_Luvani_Resume.pdf` with an updated PDF of the same filename.
-- Change colors and layout in `styles.css`.
+- Change colors and layout in `styles.css`, and movement in `animations.css`.
 
 The site uses Google Fonts when available and system fonts as a fallback.
